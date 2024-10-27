@@ -1,3 +1,10 @@
+.body {
+    background-color: #090317;
+    width: 100%;
+    height: 100%;
+    padding: 5px 0px;
+}
+
 .pageHeader {
     text-align: center;
     padding: 4px;
@@ -5,13 +12,7 @@
     font-family: 'ADLaM Display', cursive;
     background-color: #221f2c;
     color: #fff1f1;
-}
-
-.body {
-    background-color: #090317;
-    width: 100%;
-    height: 100%;
-    padding: 5px 0px;
+    text-indent: 0px;
 }
 
 .mainContent {
@@ -32,4 +33,17 @@
 }
 
 .contentSection {
+    text-indent: 20px;
+}
+
+.socials {
+    text-align: center;
+    float: right;
+    width: auto;
+    height: auto;
+    display: block;
+    margin-right: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: auto;
 }
