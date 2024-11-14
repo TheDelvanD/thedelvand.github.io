@@ -11,16 +11,12 @@
         <link href="css/style.css" rel="stylesheet"> 
     </head>     
     <body class="body">
-        <header class="pageHeader">
-            <p style="font-size: 36px; margin-bottom: -14px; margin-top: 0px;">DelvanD&apos;s Stream Stuff!</p>
-            <p style="font-size: 10px; margin-bottom: -8px;">(Yes this title and page design could use some work!)</p>
-            <p style="font-size: 16px; margin-bottom: 0px;">MIU overlays, commands, code snippets and more!</p>
+        <header class="pageHeader"><span class="l1">DelvanD&apos;s Stream Stuff!</span><span class="l2">(Yes this title and page design could use some work!)</span><span class="l3">MIU overlays, commands, code snippets and more!</span>
         </header>
         <div class="mainContent">
             <div class="contentSection">
                 <div class="downloadHeader">
-                    <h2>Discord Server Widget</h2>
-                    <span class="downloadSpan"><a href="./files/overlays/DiscordWidget.zip">Click here to download</a></span>
+                    <h2>Discord Server Widget</h2><span class="downloadSpan"><a href="./files/overlays/DiscordWidget.zip">Click here to download</a></span>
                 </div>
                 <div class="divTable">
                     <div class="divRow">
@@ -30,32 +26,32 @@
                             <p>A note about versioning: I tend to forget about things like version numbers. I&apos;ve lost count of the number of times I&apos;ve tweaked this widget before releasing it. I have no intention of updating it unless some major change to Mix It Up or Discord breaks it. So for now I&apos;ll just call it version 1.0. If I do release an update I&apos;ll make it very obvious by adding version numbers everywhere!</p>
                         </div>
                         <div class="divCell">
-                            <img src="./img/discord-overlay/discord-widget.png">
+                            <img src="./img/discord-overlay/discord-widget.png" alt="Discord widget preview">
                         </div>
                     </div>
                     <div class="divRow">
                         <div class="divCell">
                             <h3>Configuring the widget</h3>
                             <p>Once you import the widget you&apos;ll be greeted with the overlay widget editor. From here you can configure the discord widget. Most of what you will want to change is in the &apos;Details&apos; tab and the &apos;Position&apos; tab. The position tab is standard to all Mix It Up widgets so I won&apos;t go over it. If you really want to customize the way this widget looks I suggest learning CSS and checking out the &apos;CSS&apos; tab. Finally, all the options shaded in red are unused, changing them will have no effect.</p>
-                            <p><b>Font Size:</b> The font size is in pixels and, by design, changing this will not only change the size of the font but also the size of the widget. Everything is propotional to this number.</p>
-                            <p><b>Font Name:</b>&nbsp;If you are familiar with CSS you&apos;ll know that the font name is really a font family. By default the discord overlay widget comes setup with the Google font &apos;Agdasima&apos;. If you don&apos;t wish to use this font you can select from any one of the fonts in the dropdown menu, or you can use a different google font. Doing so will require editing the &apos;GoogleFont&apos; property down below.</p>
-                            <p><b>Font Color:</b> Here you can set the color of the text in the widget. Any CSS color code will work here. For example the word Red, #FF0000, and rgb(255 0 0) will all preduce the color red.</p>
-                            <p><b>DiscordServerID:</b>&nbsp;Paste your discord server ID number here.&nbsp;To get your Discord server ID, open Discord, click on &apos;Server Settings&apos;, click &apos;Widget&apos;, then click &apos;Copy&apos; next to the &apos;Server ID&apos;.</p>
-                            <p><b>DiscordLogoLocation:</b>&nbsp;This is the location of the Discord logo displayed under your server name. To download the logo, goto <a href="https://discord.com/branding">discord.com/branding</a> then click on &apos;.png&apos; under the color of the logo you wish to use. Save the png file in a location that&apos;s easy to remember and won&apos;t be deleted. Copy that location and paste it between &apos;{LocalFile:\\&apos; and &apos;}&apos;.<br><br>
+                            <p><font class="explainerText">Font Size:</font> The font size is in pixels and, by design, changing this will not only change the size of the font but also the size of the widget. Everything is propotional to this number.</p>
+                            <p><font class="explainerText">Font Name:</font>&nbsp;If you are familiar with CSS you&apos;ll know that the font name is really a font family. By default the discord overlay widget comes setup with the Google font &apos;Agdasima&apos;. If you don&apos;t wish to use this font you can select from any one of the fonts in the dropdown menu, or you can use a different google font. Doing so will require editing the &apos;GoogleFont&apos; property down below.</p>
+                            <p><font class="explainerText">Font Color:</font> Here you can set the color of the text in the widget. Any CSS color code will work here. For example the word Red, #FF0000, and rgb(255 0 0) will all preduce the color red.</p>
+                            <p><font class="explainerText">DiscordServerID:</font> Paste your discord server ID number here.&nbsp;To get your Discord server ID, open Discord, click on &apos;Server Settings&apos;, click &apos;Widget&apos;, then click &apos;Copy&apos; next to the &apos;Server ID&apos;.</p>
+                            <p><font class="explainerText">DiscordLogoLocation:</font> This is the location of the Discord logo displayed under your server name. To download the logo, goto <a href="https://discord.com/branding" target="_blank">discord.com/branding</a> then click on &apos;.png&apos; under the color of the logo you wish to use. Save the png file in a location that&apos;s easy to remember and won&apos;t be deleted. Copy that location and paste it between &apos;{LocalFile:\\&apos; and &apos;}&apos;.<br><br>
                                 If you are having issues with the logo displaying properly:</p>
                             <ul>
                                 <li>Double check the file location, make sure you included the .png and the &apos;}&apos; at the end.</li>
                                 <li>Make sure you downloaded the png file and not the svg file.</li>
                                 <li>Make sure the L and F in &apos;{LocalFile:\\&apos; are capitalized, it is case sensitive.</li>
                             </ul>                             
-                            <p><b>HeaderBGColor:</b> Similar to the Font Color any CSS color code will work here. The default value uses <code>rgb(0 0 0 / 0.9)</code> this produces a black color with a 90% opacity.</p>
-                            <p><b>MembersBGColor:</b> See the above text. The default value uses <code>rgb(0 0 0 / 0.7)</code> which produces a black color with a 70% opacity.</p>
-                            <p><b>Border:</b> Just like font and background colors, any CSS border code will work here. The default value uses <code>5px rgb(0 0 0 / 0.6) solid</code> which produces a 5 pixel thick solid black border with a 60% opacity.</p>
-                            <p><b>Footer:</b> This is simply a string of text that appears at the bottom of the widget. Useful for advertizing a chat command as the default value suggests. This does not add a chat command, you&apos;ll need to make one yourself.</p>
-                            <p><b>GoogleFont:</b> If you are not going to use a Google font you can leave this blank. If you wish to use a different Google font, you&apos;ll need to change the import url and the &apos;Font Name&apos; at the top of the editor. To find the import url visit <a href="https://fonts.google.com/">fonts.google.com</a>, search for and select the font you want to use, click on &apos;Get Font&apos;, followed by &apos;Get Embed Code&apos;, then select the &apos;Import&apos; option. Copy the code between the &apos;&lt;style&gt;&apos; tags and paste it here. Then copy the value of &apos;font-family&apos; and past it in &apos;Font Name&apos; at the top of the editor.</p>
+                            <p><font class="explainerText">HeaderBGColor:</font> Similar to the Font Color any CSS color code will work here. The default value uses <code>rgb(0 0 0 / 0.9)</code> this produces a black color with a 90% opacity.</p>
+                            <p><font class="explainerText">MembersBGColor:</font> See the above text. The default value uses <code>rgb(0 0 0 / 0.7)</code> which produces a black color with a 70% opacity.</p>
+                            <p><font class="explainerText">Border:</font> Just like font and background colors, any CSS border code will work here. The default value uses <code>5px rgb(0 0 0 / 0.6) solid</code> which produces a 5 pixel thick solid black border with a 60% opacity.</p>
+                            <p><font class="explainerText">Footer:</font> This is simply a string of text that appears at the bottom of the widget. Useful for advertizing a chat command as the default value suggests. <font class="warningText">This does not add a chat command, you&apos;ll need to make one yourself.</font></p>
+                            <p><font class="explainerText">GoogleFont:</font> If you are not going to use a Google font you can leave this blank. If you wish to use a different Google font, you&apos;ll need to change the import url and the &apos;Font Name&apos; at the top of the editor. To find the import url visit <a href="https://fonts.google.com/" target="_blank">fonts.google.com</a>, search for and select the font you want to use, click on &apos;Get Font&apos;, followed by &apos;Get Embed Code&apos;, then select the &apos;Import&apos; option. Copy the code between the &apos;&lt;style&gt;&apos; tags and paste it here. Then copy the value of &apos;font-family&apos; and past it in &apos;Font Name&apos; at the top of the editor.</p>
                         </div>
                         <div class="divCell">
-                            <img src="./img/discord-overlay/widget-editor.png">
+                            <img src="./img/discord-overlay/widget-editor.png" alt="Widget editor preview">
                         </div>
                     </div>
                 </div>
